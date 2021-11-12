@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+    // <!--1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.-->
+
+    let resours = []
+    let result = 0
+    let x = 0;
+    for (let i = 0; i < 10; i++) {
+        x = Math.floor(Math.random() * 100)
+        resours[i] = x;
+        result += x
+    }
+    console.log(resours)
+    console.log(result)
+
+    // <!--2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр-->
+    let book = {
+        title: '',
+        namLetters: '',
+        genre: ''
+    }
+
+    // <!--3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори-->
+    let book2 = {
+        title: 'qweqwdqwd',
+        namLetters: 325,
+        genre: 'cvxcvxvc',
+        author: 'fdgdrtgert'
+    }
+
+    // <!--4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт-->
+    let book3 = {
+        title: 'bkuyhklyuiy',
+        namLetters: 785,
+        genre: 'hmhjkhnjm',
+        author: 'qweqweqewqew'
+    }
+
+    let books = [book2, book3]
+    console.log(books[0], books[1]);
+
+    // <!--5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).-->
+    // <!--Значення площі зберігати в змінній s.-->
+    let height = 23;
+    let width = 10;
+    let s = height * width;
+    console.log(s);
+
+    // <!--6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),-->
+    // <!--результат помістіть у змінну v.-->
+    let heightC = 10;
+    let dC = 4;
+    let v = 3.14 * ((dC / 2) ** 2) * heightC;
+    console.log(v);
+
+    // <!--7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).-->
+    // <!--Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).-->
+    let n = 3;
+    let m = 4;
+    let k = Math.sqrt((n ** 2) + (m ** 2));
+    console.log(k)
+
+
+
+
+</script>
+</body>
+</html>
