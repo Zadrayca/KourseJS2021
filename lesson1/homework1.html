@@ -83,24 +83,25 @@
     let firstName = 'Константин';
     let middleName = 'Витальевич';
     let lastName = 'Ляшенко';
-    let person = [firstName, middleName, lastName]
+    let person = firstName + middleName + lastName;
+    console.log(person)
 
     // <!-- - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.-->
-    let name = prompt('Введите имя')
-    let midName = prompt('Введите отчество')
-    let age = prompt('Введите ваш возраст')
+    let name = prompt('Введите имя');
+    let midName = prompt('Введите отчество');
+    let age = prompt('Введите ваш возраст');
 
     // <!--Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".-->
-    console.log('Вітаю', name, 'По батькові', midName,'.', 'Тобі', age, 'років')
+    console.log('Вітаю ' + name + '.По батькові ' + midName + ' .'+'Тобі '+ age+ ' років.');
 
     // <!-- - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.-->
     // <!--let a = 100; let b = '100'; let c = true;-->
     let q = 100;
     let w = '100';
     let r = true;
-    console.log(typeof q)
-    console.log(typeof w)
-    console.log(typeof r)
+    console.log(typeof q);
+    console.log(typeof w);
+    console.log(typeof r);
 
     // <!-- - Визначити відповідний оператор в виразах що б вийшов відповідний результат.-->
     // <!--В однакових виразах не використовувати однакові оператори!!!-->
