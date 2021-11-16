@@ -82,7 +82,7 @@ for (let zzz of mass9){
         count4++;
     }
 }
-console.log(mass10)
+// console.log(mass10)
 
 // - Дано 2 масиви з рівною кількістю об'єктів.
 // Масиви:
@@ -118,14 +118,65 @@ console.log(mass10)
 //             // TO BE CONTINUED .....
 //         ]
 //
+let usersWithId = [
+    {id: 1, name: 'vasya', age: 31, status: false},
+    {id: 2, name: 'petya', age: 30, status: true},
+    {id: 3, name: 'kolya', age: 29, status: true},
+    {id: 4, name: 'olya', age: 28, status: false}
+];
+let citiesWithId = [
+    {user_id: 3, country: 'USA', city: 'Portland'},
+    {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+    {user_id: 2, country: 'Poland', city: 'Krakow'},
+    {user_id: 4, country: 'USA', city: 'Miami'}
+];
+let newUser;
+for (let zzz of usersWithId){
+    for (let ccc of citiesWithId){
+        newUser = zzz;
+        if (zzz.id === ccc.user_id){
+            newUser.adress = ccc;
+        }
+    }
+}
+console.log(newUser);
 //
-//
-//
-//         - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
-//
+// - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+let mass11 = [];
+for (let i = 0; i < 10; i++) {
+    mass11[i] = Math.floor(Math.random() * 100);
+}
+for (let zzz of mass11){
+    if (zzz % 2 === 0){
+        console.log(zzz);
+    }
+}
 // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
-//
+let mass12 = [];
+for (let zzz in mass11) {
+    mass12[zzz] = mass11[zzz];
+}
+console.log(mass12);
+
 //
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+let mass13 = [ 'a', 'b', 'c'];
+let nnn = '';
+for(let i = 0; i < mass13.length; i++){
+    nnn += mass13[i];
+}
+console.log(nnn);
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+let i = 0;
+let bbb = '';
+while (i < mass13.length){
+    bbb += mass13[i];
+    i++;
+}
+console.log(bbb);
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+let vvv = '';
+for(let zzz of mass13){
+    vvv += zzz;
+}
+console.log(vvv);
