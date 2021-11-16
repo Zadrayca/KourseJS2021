@@ -44,38 +44,38 @@ for (let i = 0; i < 10; i++) {
     z = Math.floor(Math.random() * 100);
     resours[i] = z;
 }
-for (let zzz in resours){
-    console.log(resours[zzz]);
+for (let zzz of resours){
+    console.log(zzz);
 }
 // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
 let resours2 = [];
 for (let i = 0; i < 10; i++) {
     resours2[i] = 'qwertyy' + i;
 }
-for (let zzz in resours2){
-    console.log(resours2[zzz]);
+for (let zzz of resours2){
+    console.log(zzz);
 }
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 let resours3 = [1, 'sdfsdfsc', 3335, true, 'xcvcx', 222, 765, 'bvcvbf', false, 334];
-for (let zzz in resours3){
-    console.log(resours3[zzz]);
+for (let zzz of resours3){
+    console.log(zzz);
 }
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-for (let zzz in resours3){
-    if (typeof(resours3[zzz]) === "boolean"){
-        console.log(resours3[zzz]);
+for (let zzz of resours3){
+    if (typeof(zzz) === "boolean"){
+        console.log(zzz);
     }
 }
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-for (let zzz in resours3){
-    if (typeof(resours3[zzz]) === "number"){
-        console.log(resours3[zzz]);
+for (let zzz of resours3){
+    if (typeof(zzz) === "number"){
+        console.log(zzz);
     }
 }
 // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-for (let zzz in resours3){
-    if (typeof(resours3[zzz]) === "string"){
-        console.log(resours3[zzz]);
+for (let zzz of resours3){
+    if (typeof(zzz) === "string"){
+        console.log(zzz);
     }
 }
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
@@ -90,8 +90,8 @@ resours4[6] = 'bgt';
 resours4[7] = 223;
 resours4[8] = '74rty';
 resours4[9] = 123;
-for (let zzz in resours4){
-    console.log(resours4[zzz]);
+for (let zzz of resours4){
+    console.log(zzz);
 }
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 for (let i = 0; i < 10; i++) {
