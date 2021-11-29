@@ -31,6 +31,7 @@ function Car(model, manufacturer, year, speed, engine) {
 let car = new Car('Turer', 'oldsmobile', 1233, 300, 1.8);
 console.log(car);
 car.info();
+car.drive()
 car.increaseMaxSpeed(50);
 car.changeYear(2021);
 let driver1 = {id: 32, qwqw: 'dsfsdf', eee: '12ddd'};
@@ -53,27 +54,29 @@ class Carr {
         this.year = year;
         this.speed = speed;
         this.engine = engine;
-        this.drive = function () {
-            console.log(`їдемо зі швидкістю ${this.speed} на годину`);
-        }
-        this.info = function () {
-            console.log(`model - ${this.model}`);
-        }
-        this.increaseMaxSpeed = function (newSpeed) {
-            this.speed += newSpeed;
-        }
-        this.changeYear = function (newValue) {
-            this.year = newValue;
-        }
-        this.addDriver = function (driver) {
-            this.driver = driver;
-        }
     }
+    drive () {
+        console.log(`їдемо зі швидкістю ${this.speed} на годину`);
+    }
+    info () {
+        console.log(`model - ${this.model}`);
+    }
+    increaseMaxSpeed (newSpeed) {
+        this.speed += newSpeed;
+    }
+    changeYear (newValue) {
+        this.year = newValue;
+    }
+    addDriver (driver) {
+        this.driver = driver;
+    }
+
 }
 
 let car2 = new Carr('Turer', 'oldsmobile', 1233, 300, 1.8);
 console.log(car2);
 car2.info();
+car2.drive();
 car2.increaseMaxSpeed(50);
 car2.changeYear(2021);
 driver2 = {id: 32, qwqw: 'dsfsdf', eee: '12ddd'};
@@ -98,7 +101,7 @@ let cinderella = [cinderella1 = new Cinderella('Cinderella1', 20, 35),
     cinderella7 = new Cinderella('Cinderella7', 19, 36),
     cinderella8 = new Cinderella('Cinderella8', 21, 45),
     cinderella9 = new Cinderella('Cinderella9', 63, 32),
-    cinderella10 = new Cinderella('Cinderella10', 18, 39),
+    cinderella10 = new Cinderella('Cinderella10', 18, 39)
 ]
 
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
