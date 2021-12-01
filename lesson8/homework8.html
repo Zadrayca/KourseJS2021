@@ -1,89 +1,89 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
 
 <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
-  molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
-  Dolore hic in quae sed.
+    molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+    Dolore hic in quae sed.
 </p>
 
 <div id="rules" class="fc bp">
-  Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
-  клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
-  участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+    Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+    клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+    участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
 </div>
 
 <ul>
-  <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
-  <li class="fc_rules rule2">Второе правило Бойцовского
-    клуба: никогда никому не рассказывать о Бойцовском клубе
-  </li>
-  <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
-    участвуют только двое.
-  </li>
-  <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+    <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+    <li class="fc_rules rule2">Второе правило Бойцовского
+        клуба: никогда никому не рассказывать о Бойцовском клубе
+    </li>
+    <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+        участвуют только двое.
+    </li>
+    <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
 </ul>
 
 <script>
 
-  // Візьміть файл template1.html, підключіть до нього скрипт, і працюйте в ньому!
-  //
-  //     - Напишіть код,  який за допомоги document.getElementById або
-  //     document.getElementsByClassName або document.getElementsByTagName :
-  // -- отримує текст з параграфа з id "content"
+    // Візьміть файл template1.html, підключіть до нього скрипт, і працюйте в ньому!
+    //
+    //     - Напишіть код,  який за допомоги document.getElementById або
+    //     document.getElementsByClassName або document.getElementsByTagName :
+    // -- отримує текст з параграфа з id "content"
 
-  let contentID = document.getElementById('content');
-  console.log(contentID.innerText);
+    let contentID = document.getElementById('content');
+    console.log(contentID.innerText);
 
-  // -- отримує текст з блоку з id "rules"
+    // -- отримує текст з блоку з id "rules"
 
-  let rules = document.getElementById('rules');
-  console.log(rules.innerText);
+    let rules = document.getElementById('rules');
+    console.log(rules.innerText);
 
-  // -- замініть текст параграфа з id 'content' на будь-який інший
+    // -- замініть текст параграфа з id 'content' на будь-який інший
 
-  let pContent = document.getElementById('content');
-  pContent.innerText = 'qweqweqweqwe';
-  console.log(pContent.innerText);
+    let pContent = document.getElementById('content');
+    pContent.innerText = 'qweqweqweqwe';
+    console.log(pContent.innerText);
 
-  // -- замініть текст параграфа з id 'rules' на будь-який інший
+    // -- замініть текст параграфа з id 'rules' на будь-який інший
 
-  let pRules = document.getElementById('rules');
-  pRules.innerText = 'sdjfsodfijsoidfjwef';
-  console.log(pRules.innerText);
+    let pRules = document.getElementById('rules');
+    pRules.innerText = 'sdjfsodfijsoidfjwef';
+    console.log(pRules.innerText);
 
-  // -- змініть кожному елементу колір фону на червоний
+    // -- змініть кожному елементу колір фону на червоний
 
-  let children = document.body.children;
-  for (const item of children) {
-    item.style.background = 'red';
-  }
+    let children = document.body.children;
+    for (const item of children) {
+        item.style.background = 'red';
+    }
 
-  // -- змініть кожному елементу колір тексту на синій
+    // -- змініть кожному елементу колір тексту на синій
 
-  let children2 = document.body.children;
-  for (const item of children2) {
-    item.style.color = 'blue';
-  }
+    let children2 = document.body.children;
+    for (const item of children2) {
+        item.style.color = 'blue';
+    }
 
-  // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
+    // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 
-  let allRules = document.getElementById('rules');
-  console.log(allRules.classList);
+    let allRules = document.getElementById('rules');
+    console.log(allRules.classList);
 
-  // -- поміняти колір тексту у всіх елементів fc_rules на червоний
+    // -- поміняти колір тексту у всіх елементів fc_rules на червоний
 
-  let eleRules = document.getElementsByClassName('fc_rules');
-  for (const eleRule of eleRules) {
-    eleRule.style.color = 'red';
-  }
+    let eleRules = document.getElementsByClassName('fc_rules');
+    for (const eleRule of eleRules) {
+        eleRule.style.color = 'red';
+    }
 
 
 </script>
