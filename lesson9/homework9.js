@@ -46,9 +46,7 @@ coursesAndDurationArray.forEach(item => {
     let text = '';
     for (let key in item) {
         text += `--${key}: ${item[key]}`
-        console.log(text);
     }
-    console.log(text);
     newDiv.innerText = text.slice(2);
     document.body.appendChild(newDiv);
 })
