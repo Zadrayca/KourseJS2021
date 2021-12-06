@@ -289,3 +289,55 @@ usersList.forEach(item => {
     document.body.appendChild(itemDiv);
 
 })
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+document.body.appendChild(document.createElement('hr'));                                     //Второй вариант
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+usersList.forEach(item => {
+    let itemDiv = document.createElement('div');
+    itemDiv.classList.add('item');
+    let userDiv = document.createElement('div');
+    let user2Div = document.createElement('div');
+    let addressDiv = document.createElement('div');
+    let address2Div = document.createElement('div');
+    let geoDiv = document.createElement('div');
+    let geoDiv2 = document.createElement('div');
+    let companyDiv = document.createElement('div');
+    let company2Div = document.createElement('div');
+    let cloneDiv = document.createElement('div');
+
+    for (let user in item) {
+        if (user === 'address') {
+            for (let key2 in item[user]) {
+                if (key2 === 'geo') {
+                    for (let key3 in item[user][key2]) {
+                        geoDiv2 = cloneDiv.cloneNode(true);
+                        geoDiv2.innerText = `${key3}: ${item[user][key2][key3]}`;
+                        geoDiv.appendChild(geoDiv2);
+                    }
+                } else {
+                    address2Div = cloneDiv.cloneNode(true);
+                    address2Div.innerText = `${key2}: ${item[user][key2]}`;
+                }
+                addressDiv.append(address2Div, geoDiv);
+            }
+        } else if (user === 'company') {
+            for (let key2 in item[user]) {
+                company2Div = cloneDiv.cloneNode(true);
+                company2Div.innerText = `${key2}: ${item[user][key2]}`;
+                companyDiv.appendChild(company2Div);
+            }
+        } else {
+            user2Div = cloneDiv.cloneNode(true);
+            user2Div.innerText = `${user}: ${item[user]}`;
+            userDiv.appendChild(user2Div);
+        }
+
+    }
+
+    itemDiv.append(userDiv, addressDiv, companyDiv);
+
+    document.body.appendChild(itemDiv);
+})
