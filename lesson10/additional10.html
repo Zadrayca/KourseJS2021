@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .popup {
+            width: 150px;
+            height: 100px;
+            background: #14b3d7;
+            position: absolute;
+            top: -1000px;
+            left: 500px;
+            transition: 2s;
+            padding: 8px;
+            border: 3px solid #097ad7;
+            border-radius: 10px;
+        }
+        .show_popup2 {
+            position: fixed;
+            top: 250px;
+            left: 700px;
+            background: #bc73e7;
+        }
+
+        .show_popup {
+            position: fixed;
+            top: 500px;
+            left: 500px;
+        }
+        .btn {
+            width: 45px;
+            height: 30px;
+        }
+        .back{
+            position: fixed;
+            top: 400px;
+            left: 700px;
+        }
+        .next {
+            position: fixed;
+            top: 400px;
+            left: 750px;
+        }
+
+        .item {
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .imageDiv {
+            position: fixed;
+            width: 300px;
+            height: 200px;
+            top: 50px;
+            left: 750px;
+        }
+        .imagee {
+            height: 100%;
+            width: auto;
+        }
+        .btnKar {
+            width: 30px;
+            height: 30px;
+        }
+        .karL {
+            position: fixed;
+            left: 700px;
+            top: 75px;
+        }
+        .karR {
+            position: fixed;
+            left: 1050px;
+            top: 75px;
+        }
+        /*::selection { color: red; background-color: yellow; }*/
+
+    </style>
+</head>
+<body>
+
+<h1>Правила бойцовского клуба</h1>
+<div id="wrap">
+    <div class="rules rule1">
+        <h2 class="rules" id="1">Первое правило Бойцовского клуба.</h2>
+        <p class="rules" id="2">Никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule2">
+        <h2 class="rules" id="3">Второе правило Бойцовского клуба.</h2>
+        <p class="rules" id="4">Никогда никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule3">
+        <h2 class="rules">Третье правило Бойцовского клуба.</h2>
+        <p class="rules">В схватке участвуют только двое.</p>
+    </div>
+    <div class="rules rule4">
+        <h2 class="rules">Четвертое правило Бойцовского клуба.</h2>
+        <p class="rules">Не более одного поединка за один раз.</p>
+    </div>
+
+    <div class="rules rule5">
+        <h2 class="rules">Пятое правило Бойцовского клуба.</h2>
+        <p class="rules">Бойцы сражаются без обуви и голые по пояс.</p>
+    </div>
+    <div class="rules rule6">
+        <h2 class="rules">Шестое правило Бойцовского клуба.</h2>
+        <p class="rules">Поединок продолжается столько, сколько потребуется.</p>
+    </div>
+    <div class="rules rule7">
+        <h2 class="rules">Седьмое правило Бойцовского клуба.</h2>
+        <p class="rules">Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок
+            окончен.</p>
+    </div>
+</div>
+
+<div><input type="checkbox" class="check" id="filter1">отфильтровывает пользователей со статусом false</div>
+<div><input type="checkbox" class="check" id="filter2">оставляет старше 29 лет включительно</div>
+<div><input type="checkbox" class="check" id="filter3">оставляет тех у кого город киев</div>
+
+
+<div id="listDiv">
+    <div id="userDiv"></div>
+</div>
+
+
+
+<script src="additional10.js"></script>
+
+</body>
+</html>
